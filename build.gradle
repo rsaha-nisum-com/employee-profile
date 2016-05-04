@@ -18,7 +18,7 @@ dependencies {
 		compile("org.springframework.boot:spring-boot-starter-thymeleaf")	
 		compile("org.springframework.boot:spring-boot-starter-actuator")
 
-	    compile "info.cukes:cucumber-java:1.2.4"
+	      compile "info.cukes:cucumber-java:1.2.4"
 	    compile "info.cukes:cucumber-junit:1.2.4"
 	    compile "info.cukes:cucumber-core:1.2.3"
 	    compile 'info.cukes:cucumber-spring:1.1.4'
