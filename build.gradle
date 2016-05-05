@@ -8,19 +8,18 @@ repositories {
     mavenCentral()
 }
 
-//cucumberVersion = '1.2.4'
+def cucumberVersion = '1.2.4'
 
-dependencies {
-		//compile 'org.slf4j:slf4j-api:1.7.5'
-		compile("org.springframework.boot:spring-boot-starter-web:1.3.3.RELEASE")
-		compile("org.springframework.boot:spring-boot-gradle-plugin:1.3.3.RELEASE")
-		compile("org.springframework.boot:spring-boot:1.3.3.RELEASE")
-		compile("org.springframework.boot:spring-boot-starter-thymeleaf")	
-		compile("org.springframework.boot:spring-boot-starter-actuator")
-	   	compile "info.cukes:cucumber-java:1.2.4"
-	    compile "info.cukes:cucumber-junit:1.2.4"
-	    compile "info.cukes:cucumber-core:1.2.3"
-	    compile "info.cukes:cucumber-picocontainer:1.2.4"
+dependencies {	
+		compile "org.springframework.boot:spring-boot-starter-web:1.3.3.RELEASE"
+		compile "org.springframework.boot:spring-boot-gradle-plugin:1.3.3.RELEASE"
+		compile "org.springframework.boot:spring-boot:1.3.3.RELEASE"
+		compile "org.springframework.boot:spring-boot-starter-thymeleaf"	
+		compile "org.springframework.boot:spring-boot-starter-actuator"
+	   	compile "info.cukes:cucumber-java:$cucumberVersion"
+	    compile "info.cukes:cucumber-junit:$cucumberVersion"
+	    compile "info.cukes:cucumber-picocontainer:$cucumberVersion"
+	    compile "info.cukes:cucumber-core:1.2.3"	    
 	    compile 'info.cukes:cucumber-spring:1.1.4'
 	    compile 'junit:junit:4.11'
 }
@@ -33,7 +32,7 @@ jar {
 buildscript {
 	repositories {
 	    mavenCentral()
-}
+	}
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:1.3.3.RELEASE")
         classpath("org.springframework.boot:spring-boot-starter-web:1.3.3.RELEASE")
@@ -59,7 +58,7 @@ configurations {
     }
 }
 
-/*task cucumber() {
+task cucumber() {
     dependsOn assemble, compileTestJava
     doLast {
         javaexec {
@@ -68,5 +67,4 @@ configurations {
             args = ['--plugin', 'pretty', '--glue', 'gradle.cucumber', 'src/test/resources']            
         }
     }
-}*/
-
+}
