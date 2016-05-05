@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Upload data file" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-05-05T05:35:21" hostname="NisumUsers-MacBook-Pro-8.local" time="0.002">
+  <properties/>
+  <testcase name="Given Navigate to employee profile home page" classname="Scenario: Upload data file" time="0.001"/>
+  <testcase name="When User select employee data" classname="Scenario: Upload data file" time="0.0"/>
+  <testcase name="Then Click on upload button" classname="Scenario: Upload data file" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Upload data file" time="0.114"/>
+  <system-out><![CDATA[Test 'Given' step.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
